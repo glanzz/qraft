@@ -7,7 +7,9 @@ from skopt import BayesSearchCV
 import joblib  # Use joblib from sklearn.externals in scikit-learn <= 0.23
 
 data = pd.read_csv('circuit_simulations_data_final.csv')
+#data=data.loc[~data['true_probability'].eq(0)] - Drops zero values
 X = data.drop('true_probability', axis=1)
+X = X.drop('state_name', axis=1) # Drop the state name
 y = data['true_probability']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random_state=42)
