@@ -18,6 +18,7 @@ class State:
             50: 0,
             75: 0
         }
+        self.average_state_error = 0
     
     def __repr__(self) -> str:
         return f"<State name={self.name} ideal_prob={self.ideal_probablity}>"
@@ -46,7 +47,8 @@ class State:
         }
     
     def calculate_errors(self):
-        self.errors = [abs(run_prob - self.ideal_probablity) for run_prob in self.run_probablities]
+        self.errors = [abs(run_prob - self.ideal_probablity)  for run_prob in self.run_probablities]
+        self.average_error = sum(self.errors)/len(self.errors)
 
     def calculate_error_percentile(self):
         self.error_percentile = {
