@@ -67,3 +67,8 @@ q_2: ──────■──────────┤ U1(0.26441) ├─�
                       └─────────────┘       └───┘        └───┘       └─────────────┘                 
 
 </pre>
+
+
+![State_error](https://github.com/glanzz/qraft/assets/60913501/ed31ede4-8274-49e5-8a5d-9701f09276c7)
+![Dominant_state_error](https://github.com/glanzz/qraft/assets/60913501/aae88275-c70a-49ca-a6dc-576254d9882d)
+![Program_error](https://github.com/glanzz/qraft/assets/60913501/44eb6ff7-8a52-4769-8678-4c41ea5bef1b)
