@@ -32,6 +32,9 @@ This requires the data generated from the previous step
 - Test the model using the following command:
 <pre>python qraft-predict/predict.py</pre>
 - You can also use the data generator to generate datasets for predicting by altering the `TOTAL_CIRCUITS_REQUIRED`
+- Examine the accuracy of your circuit using 
+<pre>python qraft-gen/examine_circuit.py</pre>
+This provides three graphs which provides insights on the model prediction which is corrected true state probability
 
 
 
